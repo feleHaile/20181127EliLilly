@@ -27,3 +27,12 @@ a2.shape = 2, 5, 4  # <8>
 
 print(a2)
 print()
+
+a1.shape = (15, 1)
+print(a1)
+
+a1.shape = (1, 15)
+print(a1)
+
+
+print(a1[0:5, :])

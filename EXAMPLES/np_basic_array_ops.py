@@ -16,6 +16,8 @@ b = np.array(
         [19, 52, 23],
     ]
 )  # <2>
+
+print("Maitraye", b[0] * [5, 10, 15])
 print("a")
 print(a)
 print()
@@ -27,9 +29,19 @@ print("a * 10")
 print(a * 10)  # <3>
 print()
 
-print("a + b")
-print(a + b)  # <4>
+print("a @ b")
+print(a @ b)  # <4>
 print()
+
+print("a * b")
+print(a * b)  # <4>
+print()
+
+
+am = np.matrix(a)
+bm = np.matrix(b)
+print("am * bm:", am * bm)
+
 
 print("b + 3")
 print(b + 3)  # <5>
@@ -42,3 +54,19 @@ print()
 
 a += 1000  # <7>
 print(a)
+
+
+def triple(x):
+    return x * 3
+
+
+c = triple(a)
+print(c)
+
+
+
+
+
+
+
+
