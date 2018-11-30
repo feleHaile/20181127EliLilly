@@ -2,7 +2,7 @@
 import numpy as np
 
 a = np.loadtxt(
-    '../DATA/columns_of_numbers.text',
+    '/Users/jstrick/Desktop/py3lilly/DATA/columns_of_numbers.txt',
     usecols=[2, 3],
     skiprows=1,
 )
@@ -10,3 +10,4 @@ a = np.loadtxt(
 print(a)
 print(a.shape)
 print(a.size)
+
